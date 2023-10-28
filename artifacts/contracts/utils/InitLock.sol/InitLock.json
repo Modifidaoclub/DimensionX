@@ -1,0 +1,36 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "InitLock",
+  "sourceName": "contracts/utils/InitLock.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "caller",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "proj",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "InitLog",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220bce145694a72029799670cd079fa3dedfefa5361c31d4c6940a131876070b7ac64736f6c634300080f0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220bce145694a72029799670cd079fa3dedfefa5361c31d4c6940a131876070b7ac64736f6c634300080f0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts/Main.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> Main.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>37/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>22/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>41/41</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">60×</span>
+<span class="cline-any cline-yes">59×</span>
+<span class="cline-any cline-yes">59×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15×</span>
+<span class="cline-any cline-yes">23×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23×</span>
+<span class="cline-any cline-yes">23×</span>
+<span class="cline-any cline-yes">23×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">64×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: MIT
+&nbsp;
+pragma solidity ^0.8.0;
+&nbsp;
+import "./solvprotocol/erc-3525/ERC3525SlotEnumerableUpgradeable.sol";
+import "./Vault/Vault.sol";
+import "./utils/InitLock.sol";
+&nbsp;
+import "@openzeppelin/contracts/utils/Counters.sol";
+&nbsp;
+import "hardhat/console.sol";
+&nbsp;
+contract DimensionX is ERC3525SlotEnumerableUpgradeable, Vault, InitLock {
+    mapping(uint =&gt; bool) public slotWhite;
+&nbsp;
+    using Counters for Counters.Counter;
+&nbsp;
+    function init(
+        string memory name_,
+        string memory symbol_,
+        uint8 decimals_,
+        uint shareSupply_,
+        address manager_,
+        address platform_
+    ) external _initLock_ {
+        _initVault(shareSupply_, manager_, platform_);
+        __ERC3525_init(name_, symbol_, decimals_);
+       _mint(manager_, 1, shareSupply_); // init tokenId is 1
+    }
+&nbsp;
+    function addSlotWhite(uint slot_) external onlyManager returns (uint) {
+        require(slot_ != 0, "ERR_CANT_BE_ZERO");
+        slotWhite[slot_] = true;
+        return slot_;
+    }
+&nbsp;
+    function removeSlotWhite(uint256 slot_) external onlyManager {
+        require(slotWhite[slot_], "ERR_HAS_NOT_WHITE");
+        slotWhite[slot_] = false;
+    }
+&nbsp;
+    function composeOrSplitToken(uint fromTokenId_, uint slot_, uint amount_) external returns (uint) {
+        uint fromSlot = this.slotOf(fromTokenId_);
+&nbsp;
+        require(slotWhite[slot_] &amp;&amp; slot_ != 0, "ERR_NOT_WHITE_SLOT");
+&nbsp;
+        uint burnFromTokenAmount = amount_;
+        uint burnTokenBalance = this.balanceOf(fromTokenId_);
+        uint getToTokenAmount = (fromSlot * amount_) / slot_;
+&nbsp;
+        uint256 newTokenId = _mint(msg.sender, slot_, getToTokenAmount);
+&nbsp;
+        burnTokenBalance == burnFromTokenAmount
+            ? _burn(fromTokenId_)
+            : _burnSlotValue(fromTokenId_, burnFromTokenAmount);
+&nbsp;
+        _updateReward(fromTokenId_, newTokenId, burnFromTokenAmount);
+&nbsp;
+        return newTokenId;
+    }
+&nbsp;
+    function _updateReward(uint fromTokenId_, uint toTokenId_, uint ftBurnBal) internal {
+        uint ftReward = _getTokenHasReward(fromTokenId_);
+        if (ftReward == 0) return;
+        uint ttReward;
+&nbsp;
+        uint curFtBal = _exists(fromTokenId_) ? this.balanceOf(fromTokenId_) : <span class="missing-if-branch" title="else path not taken" >E</span>0;
+        uint total = ftBurnBal + curFtBal;
+&nbsp;
+        ttReward = (ftReward * ftBurnBal) / total;
+        ftReward = (ftReward * curFtBal) / total;
+&nbsp;
+        _setTokenReward(fromTokenId_, ftReward);
+        _setTokenReward(toTokenId_, ttReward);
+    }
+&nbsp;
+    function _getRewardTokensAndShare(address user_) internal virtual override returns (uint[] memory, uint[] memory) {
+        AddressData storage userAssets = __addressData(user_);
+&nbsp;
+        uint[] memory tokens = userAssets.ownedTokens;
+        uint[] memory shares = new uint[](tokens.length);
+&nbsp;
+        require(tokens.length != 0, "ERR_YOU_HAVE_NO_TOKEN");
+&nbsp;
+        for (uint i; i &lt; tokens.length; i++) {
+            uint tokenId = tokens[i];
+&nbsp;
+            uint tokenSlot = this.slotOf(tokenId);
+            uint balance = this.balanceOf(tokenId);
+            uint share = tokenSlot * balance;
+&nbsp;
+            shares[i] = share;
+        }
+&nbsp;
+        return (tokens, shares);
+    }
+&nbsp;
+    function _burnSlotValue(uint256 tokenId_, uint256 burnValue_) internal {
+        <span class="missing-if-branch" title="else path not taken" >E</span>require(_isApprovedOrOwner(_msgSender(), tokenId_), "ERC3525: caller is not token owner nor approved");
+        ERC3525Upgradeable._burnValue(tokenId_, burnValue_);
+    }
+&nbsp;
+    function _afterValueTransfer(
+        address,
+        address,
+        uint256 fromTokenId_,
+        uint256 toTokenId_,
+        uint256,
+        uint256 value_
+    ) internal virtual override {
+        if (fromTokenId_ == 0) return;
+        _updateReward(fromTokenId_, toTokenId_, value_);
+    }
+&nbsp;
+    uint256[50] private __gap;
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Dec 03 2022 22:12:27 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
